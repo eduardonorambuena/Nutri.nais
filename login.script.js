@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (username === 'admin' && password === 'admin123') {
         alert('Inicio de sesión exitoso');
         // Redirigir a la página index.html
-        window.location.href = 'index.html';
+        window.location.href = 'principal.html';
     } else {
         alert('Usuario o contraseña incorrectos');
     }
