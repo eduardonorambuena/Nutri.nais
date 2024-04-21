@@ -5,15 +5,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simulación de autenticación
     if (username === 'admin' && password === 'admin123') {
         alert('Inicio de sesión exitoso');
-        // Redirigir a la página index.html
+        // Redirigir a la página principal.html
         window.location.href = 'principal.html';
     } else {
         alert('Usuario o contraseña incorrectos');
     }
 });
-
-document.getElementById('clienteBtn').addEventListener('click', function() {
-    // Redirigir a la página principal.html
-    window.location.href = 'principal.html';
-});
-
