@@ -1,3 +1,4 @@
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
@@ -5,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Simulación de autenticación
     if (username === 'admin' && password === 'admin123') {
         alert('Inicio de sesión exitoso');
-        // Redirigir a la página principal.html
-        window.location.href = 'html.principal';
+        // Redirigir a la página inicio.html
+        window.location.href = 'inicio.html';
     } else {
         alert('Usuario o contraseña incorrectos');
     }
