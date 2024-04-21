@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0d1f2; /* Color de fondo morado claro */
+            background-image: url('imagenes/sandia.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -43,6 +46,14 @@
         <button class="button" onclick="redirectToEmail('anaiss.zam@gmail.com')">Enviar correo electrónico</button>
     </div>
 
-    <script src="inicio.script.js"></script>
+    <script>
+        function redirectToWhatsApp(phoneNumber) {
+            window.location.href = 'https://wa.me/' + phoneNumber;
+        }
+
+        function redirectToEmail(emailAddress) {
+            window.location.href = 'mailto:' + emailAddress;
+        }
+    </script>
 </body>
 </html>
