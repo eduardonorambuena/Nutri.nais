@@ -1,6 +1,6 @@
 document.getElementById('clienteBtn').addEventListener('click', function() {
-    // Redirigir a la página inicio.html
-    window.location.href = 'inicio.html';
+    // Redirigir a la página index.html
+    window.location.href = 'index.html';
 });
 
 function redirectToWhatsApp(phoneNumber) {

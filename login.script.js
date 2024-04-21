@@ -1,4 +1,3 @@
-
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
@@ -11,4 +10,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     } else {
         alert('Usuario o contraseña incorrectos');
     }
+});
+
+document.getElementById('clienteBtn').addEventListener('click', function() {
+    // Redirigir a la página inicio.html
+    window.location.href = 'inicio.html';
 });
