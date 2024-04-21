@@ -13,6 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 document.getElementById('clienteBtn').addEventListener('click', function() {
-    // Redirigir a la página cliente.html
-    window.location.href = 'cliente.html';
+    // Redirigir a la página principal.html
+    window.location.href = 'principal.html';
 });
+
