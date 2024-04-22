@@ -47,29 +47,19 @@
             border-radius: 5px;
             padding: 10px;
         }
-
-        #calendar {
-            margin-top: 20px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
     </style>
 </head>
-<body onload="handleClientLoad()">
+<body>
     <div class="container">
         <h1>Bienvenido</h1>
         <button class="button" onclick="redirectToWhatsApp('+56940246069')">Enviar mensaje por WhatsApp</button>
         <button class="button" onclick="redirectToEmail('anaiss.zam@gmail.com')">Enviar correo electrónico</button>
+        <a href="https://calendly.com/edua-norambuena" target="_blank" class="button">Cita</a>
     </div>
 
     <!-- Reloj -->
     <div id="clock"></div>
 
-    <!-- Calendario -->
-    <div id='calendar'></div>
-    
-    <script src="https://apis.google.com/js/api.js"></script>
     <script>
         function redirectToWhatsApp(phoneNumber) {
             window.location.href = 'https://wa.me/' + phoneNumber;
@@ -77,25 +67,6 @@
 
         function redirectToEmail(emailAddress) {
             window.location.href = 'mailto:' + emailAddress;
-        }
-
-        // Inicializar Google Calendar API
-        function handleClientLoad() {
-            gapi.load('client:auth2', initClient);
-        }
-
-        function initClient() {
-            gapi.client.init({
-                apiKey: 'AIzaSyDZvQt8RrhtZGZGYYRvTg0Ir4N5tSFwG70',
-                clientId: '821449083812-touraabs6jpaqcet5c1hkjqe0k6oqi3q.apps.googleusercontent.com',
-                discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
-                scope: 'https://www.googleapis.com/auth/calendar'
-            }).then(function () {
-                // La inicialización es exitosa, puedes llamar a las funciones para interactuar con la API de Google Calendar aquí
-                console.log('Google Calendar API initialized');
-            }, function (error) {
-                console.error('Error initializing Google Calendar API', error);
-            });
         }
     </script>
 </body>
